@@ -1,0 +1,127 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f1115;
+    color: white;
+  }
+  
+  /* Container Layout */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    min-height: 100vh;
+    background: radial-gradient(circle at top left, #1e2d3b, #0f1115);
+  }
+  
+  /* Left Section */
+  .left-section {
+    flex: 1;
+    padding: 20px 40px;
+  }
+  
+  .left-section h1 {
+    font-size: 42px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .left-section h1 span {
+    color: #00ffff;
+    font-weight: bold;
+  }
+  
+  .left-section p {
+    font-size: 16px;
+    color: #b0b0b0;
+  }
+  
+  /* Right Section */
+  .right-section {
+    flex: 1;
+    background-color: #183d66;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.1);
+  }
+  
+  .right-section h2 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Form Styles */
+  form input,
+  form select,
+  form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #2b3d52;
+    color: white;
+  }
+  
+  /* Required Fields */
+  form input:required,
+  form select:required,
+  form textarea:required {
+    border: 2px solid #00ffff; /* Red border for required fields */
+    background-color: #3b4c65; /* Slightly darker background for emphasis */
+  }
+  
+  /* Select Option Text */
+  form select option {
+    color: #000;
+  }
+  
+  form textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  /* Button */
+  form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    background-color: #00ffff;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #00cccc;
+  }
+  
+  /* Response Message */
+  #responseMsg {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 500;
+    color: #00ffcc;
+  }
+  .login-link {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+.login-link a {
+  color: #007BFF;
+  text-decoration: none;
+}
+.login-link a:hover {
+  text-decoration: underline;
+}

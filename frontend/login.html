@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - ClaimXpert</title>
+    <link rel="icon" href="images/icon.jpeg" type="image/jpeg" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/insurance_rregistration.css">
+  <!-- Use the same CSS as signup -->
+</head>
+<body>
+   <div id="header-placeholder1"></div>
+
+  <div class="container">
+    <div class="left-section">
+      <h1>We provide the best value <span>insurance</span></h1>
+      <p>Simple Steps You Can Take to Improve Your Financial Well-Being for the rest of Your Life</p>
+    </div>
+
+    <div class="right-section">
+      <form id="loginForm">
+        <h2>Login</h2>
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <input type="text" id="companyName" placeholder="Insurance Company Name" required />
+        <input type="text" id="companyId" placeholder="Company Id" required />
+        
+        <!-- Submit button for the form -->
+        <button type="submit">Login</button>
+      </form>
+      <p id="loginMsg" class="response-message"></p>
+    </div>
+  </div>
+    
+  <script src="js/main1.js"></script>
+  <script type="module" src="js/login.js"></script>
+</body>
+</html>

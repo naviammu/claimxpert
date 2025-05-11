@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Insurance Registration</title>
+    <link rel="icon" href="images/icon.jpeg" type="image/jpeg" />
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/insurance_rregistration.css">
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+
+  <!-- reCAPTCHA v3 -->
+  <script src="https://www.google.com/recaptcha/api.js?render=6Ldw_i4rAAAAAKYcq_tB5x1j4TSzmQTpk33ASz7l"></script>
+</head>
+<body>
+
+  <div id="header-placeholder"></div>
+
+  <div class="container">
+    <div class="left-section">
+      <h1>We provide the best value <span>insurance</span></h1>
+      <p>Simple Steps You Can Take to Improve Your Financial Well-Being for the rest of Your Life</p>
+    </div>
+
+    <div class="right-section">
+      <form id="registrationForm">
+        <h2>Register</h2>
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <input type="text" id="companyName" placeholder="Insurance Company Name" required />
+        <input type="text" id="companyId" placeholder="Company Id" required />
+        
+        <!-- Submit button for the form -->
+        <button type="submit">Register</button>
+      </form>
+      <p id="responseMsg"></p>
+        <p class="login-link">Already have an account? <a href="login.html">Login</a></p>
+
+    </div>
+  </div>
+
+  <!-- Invisible reCAPTCHA v3 will not be shown but is used for email verification -->
+  <div id="hidden-recaptcha-container"></div>
+
+  <script src="js/main.js"></script>
+  <script type="module" src="js/insurance_registration.js"></script>
+
+</body>
+</html>
